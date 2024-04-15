@@ -1,0 +1,21 @@
+version: "3.3"
+
+services:
+#  frontend:
+#    build:
+#      context: ../front/gagarin/
+#      dockerfile: Dockerfile
+#    ports:
+#      - "5177:5177"
+  go-backend:
+    build:
+      context: ../go-backend/
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - DOCKER_MODE=1
+    ports:
+      - "8086:8086"
+    network_mode: host
+
+    
