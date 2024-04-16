@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 64px 0;
+
+    &__logo {
+        cursor: pointer;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+
+        gap: 32px;
+
+        button {
+            cursor: pointer;
+            background: #F5CE00;
+            border: none;
+            width: 110px;
+            height: 39px;
+
+            color: #000;
+            font-family: var(--font-family);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+.modal_info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.close {
+    // margin-bottom: 38px;
+    margin-right: -70px;
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    img{
+        float: right;
+    }
+}
+
+.contact{
+    width: 710px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: none;
+    padding: 12px 12px 12px 32px;
+
+    border-radius: 999px;
+    border: 1px solid #41414A;
+
+    background: linear-gradient(90deg, rgba(23, 22, 24, 0.50) 5.76%, rgba(109, 108, 118, 0.50) 97.3%);
+
+    backdrop-filter: blur(30px);
+
+    &__input {
+        width: 80%;
+        height: 6vh;
+        color: #B4B4B4;
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        
+        border: none;
+        background: none;
+        outline:none;
+    
+    }
+
+    button{
+        cursor: pointer;
+        background: none;
+        border: none;
+
+        padding: 16px;
+
+        border-radius: 999px;
+        background: rgba(45, 45, 45, 0.81);
+    }
+}
+
