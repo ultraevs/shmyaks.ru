@@ -48,7 +48,6 @@
 }
 
 .close {
-    // margin-bottom: 38px;
     margin-right: -70px;
     background: none;
     border: none;
@@ -102,6 +101,12 @@
 
         border-radius: 999px;
         background: rgba(45, 45, 45, 0.81);
+    }
+
+    button:hover{
+        transform: rotate(45deg);
+        transition: 0.3s;
+        border: 1px #161516 solid;
     }
 }
 

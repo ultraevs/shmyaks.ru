@@ -1,5 +1,5 @@
-import gallery_1 from "../../assets/img/gallery_1.jpg"
 import mouse from "../../assets/svg/mouse.svg"
+import CarouselBox from "../СarouselBox/CarouselBox";
 import styles from "./Hero.module.scss"
 
 const Hero = () => {
@@ -12,7 +12,7 @@ const Hero = () => {
                 <button>Заказать сайт</button>
             </div>
             <div className={styles.container__gallery}>
-                <img src={gallery_1} alt="" />
+                <CarouselBox />
             </div>
         </div>
         <div className={styles.scroll_down}>
