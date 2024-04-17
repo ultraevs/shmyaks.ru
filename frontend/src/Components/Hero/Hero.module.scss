@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    margin-top: 96px;
+    height: calc(100vh - 215px);
+
+    &__info {
+        h1 {
+            color: var(--second-color);
+            font-family: var(--second-family);
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 540;
+            line-height: normal;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.80);
+            font-family: var(--font-family);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        button {
+            cursor: pointer;
+            background: #EDEDED;
+
+            border: none;
+            margin-top: 22px;
+            padding: 10px 14px;
+        }
+        button:hover{
+            color: #EDEDED;
+            background: none;
+            border: 1px solid #EDEDED;
+            transition: 0.3s ease-out;
+        }
+    }
+
+    &__gallery {
+        border-radius: 16px;
+
+        img {
+            border-radius: 20px;
+        }
+    }
+}
+
+.scroll_down{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    // margin-top: 96px;
+
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
+
+    p{
+        color: #C7C7C7;
+        text-align: center;
+        font-family: "Geist Variable", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 460;
+        line-height: 110%;
+    }
+}
