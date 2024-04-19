@@ -1,30 +1,30 @@
 import React from 'react'
 
 import Carousel from "react-bootstrap/Carousel"
-import gallery_1 from "../../assets/img/gallery_1.jpg";
-
+import PropTypes from 'prop-types';
 import './CarouselBox.css'
 
-const CarouselBox = () => {
+const CarouselBox = ({props, control}) => {
     return (
-        <Carousel indicators={false}>
-            <Carousel.Item>
-                <img
-                    src={gallery_1}
-                    alt="Тендерлайн"
-                />
-            </Carousel.Item>
-
-            <Carousel.Item>
-                <img
-                    src={gallery_1}
-                    alt="Тендерлайн"
-                />
-            </Carousel.Item>
+        
+        <Carousel indicators={false} controls={control}>
+            {props.map((image, index) => (
+                <Carousel.Item key={index}>
+                    <img
+                        src={image}
+                        alt={`Image ${index + 1}`}
+                    />
+                </Carousel.Item>
+            ))}
 
         </Carousel>
 
     );
 }
+
+
+CarouselBox.propTypes = {
+    props: PropTypes.arrayOf(PropTypes.string).isRequired
+};
 
 export default CarouselBox;

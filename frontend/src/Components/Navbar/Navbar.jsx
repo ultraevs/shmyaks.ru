@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import {animateScroll as scroll } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 import styles from "./Navbar.module.scss"
 const Navbar = () => {
@@ -11,17 +12,19 @@ const Navbar = () => {
         <nav>
             <ul>
                 <li>
-                    <Link onClick={scrollToTop} to="#">Главная</Link>
+                    <NavLink onClick={scrollToTop} to="/">
+                        Главная
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="about" spy smooth>
+                    <NavLink to="/about">
                         О нас
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="projects" spy smooth>
+                    <NavLink to="/projects">
                         Проекты
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
         </nav>
